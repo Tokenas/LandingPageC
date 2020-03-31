@@ -1,0 +1,37 @@
+
+/*  */
+body {
+    padding: 0;
+    margin: 0;
+    vertical-align: top; /*he element is aligned with the top of the tallest element on the line*/
+    box-sizing: border-box; /*padding and border are included in the width and height*/
+}
+.wrapper {
+    /* display: inline-block; */
+    /* float: left; */
+    width: 100vw;
+    /* height: 100vh; */
+    margin-left: calc( (100% - 100vw) / 2 );
+}
+.main {
+    background-color: red;
+    /* display: inline-block; */
+    float: left;
+    width: calc( (120% - 2 * 0px) / 2 );
+}
+/* width: 100%;
+    height: auto;
+    object-fit: cover; */
+.img {
+    background: url(images/1.png);
+    /* background-color: salmon; */
+    /* background-color: black; */
+    /* display: inline-block; */
+    float: right;
+    width: calc( (80% - 2 * 0px) / 2 );
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

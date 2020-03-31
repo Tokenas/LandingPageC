@@ -1,0 +1,14 @@
+Persiunčiu du vizualus - banking_visual.png, kurį reikia sukodinti (HTML, CSS) ir nuotrauką, 
+kuri bus reikalinga kodinant vizualą (žr. priedus).
+
+Užduoties tikslas yra išmokti sukodinti tvarkingą turinio atvaizdavimą su HTML ir CSS, 
+tad nenaudok jokių framework'ų kaip Bootstrap ar pan. Tikiu, kad keliose vietose gali tekti palaužyti galvą 
+kaip čia atvaizduoti - viską googlink, tinkamai suformulavęs užklausą atsakymus tikrai rasi.
+
+Dar keli aspektai:
+ - Vizualas turi apimti visą naršyklės langą (100 proc.) - nei daugiau, nei mažiau
+ - Scroll ikonai gali naudoti FontAwesome, neprivalo būti identiška ikona
+ - Naudok "Roboto" šriftą iš "Google Fonts"
+ - Sugalvok kokį minimalistinį efektą užvedus mauzą ant navigacijos rubrikų ir "Get the app" mygtuko
+ - Tų dviejų apskritimų prie prierašo "a mobile banking experience consisting.." 
+nebūtina atlikti šiame etape, bet jeigu pavyks - įgyvendink tai pabaigoje (užuomina - CSS ::after selector).
