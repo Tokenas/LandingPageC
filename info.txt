@@ -6,7 +6,7 @@ tad nenaudok jokių framework'ų kaip Bootstrap ar pan. Tikiu, kad keliose vieto
 kaip čia atvaizduoti - viską googlink, tinkamai suformulavęs užklausą atsakymus tikrai rasi.
 
 Dar keli aspektai:
- - Vizualas turi apimti visą naršyklės langą (100 proc.) - nei daugiau, nei mažiau
+ - Vizualas turi apimti visą naršyklės langą (100 proc.) - nei daugiau, nei mažiau 
  - Scroll ikonai gali naudoti FontAwesome, neprivalo būti identiška ikona
  - Naudok "Roboto" šriftą iš "Google Fonts"
  - Sugalvok kokį minimalistinį efektą užvedus mauzą ant navigacijos rubrikų ir "Get the app" mygtuko
