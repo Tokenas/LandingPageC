@@ -108,25 +108,62 @@ body {
 .hero {
     padding-left: 9rem;
 }
+
 .hero > h1 {
     font-size: 60px;
     font-weight: 900;
     line-height: 60px;
     padding-top: 3rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
     color: #333333;
 }
+
 .hero > p {
     padding-top: 1rem;
     font-size: 18px;
     line-height: 27px;
     color: #333333;
+    letter-spacing: 0.5px;
+    position: relative;
 }
+
+.hero > .after::after { 
+    content: "";
+    padding: 50px 50px; 
+    border-radius: 50px;
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    background-color: #333333;
+    opacity: 0.5;
+}
+.hero > .after::before { 
+    content: "";
+    padding: 50px 50px; 
+    border-radius: 50px;
+    position: absolute;
+    top: 25px;
+    left: 285px;
+    background-color: rgb(255, 53, 63);
+    opacity: 0.5;
+}
+
+/* .hero > .after::before,
+.hero > .after::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: "";
+    border-radius: 50px;
+    border: 1px solid black;
+} */
+
 .hero > .far {
     color: #333333;
     font-size: 60px;
     padding-top: 3rem;
 }
+
 .hero > .scroll {
     text-transform: capitalize;
     display: inline-block;
