@@ -51,6 +51,12 @@ body {
     text-decoration: none;
     color: black;
     text-transform: capitalize;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.nav > a:hover {
+    opacity: 0.5;
 }
 
 .nav > a:nth-child(2) {
@@ -71,6 +77,10 @@ body {
     text-decoration: none;
     color: black;
     text-transform: capitalize;
+    transition: 0.4s;
+}
+.acc > .divider:hover {
+    opacity: 0.5;
 }
 
 .acc > .btn {
@@ -78,6 +88,10 @@ body {
     border-radius: 2px;
     background-color: #333333;
     padding: 12px 17px;
+    opacity: 1;
+}
+.acc > .btn:hover {
+    opacity: 0.5;
 }
 /* image in the right */
 .img {
