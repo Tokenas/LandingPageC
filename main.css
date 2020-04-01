@@ -1,37 +1,119 @@
 
-/*  */
 body {
     padding: 0;
     margin: 0;
-    vertical-align: top; /*he element is aligned with the top of the tallest element on the line*/
+    vertical-align: top; /*element is aligned with the top of the tallest element on the line*/
     box-sizing: border-box; /*padding and border are included in the width and height*/
+    font-family: 'Roboto', sans-serif;
 }
+/* all wrapping and dividing page in sections */
 .wrapper {
-    /* display: inline-block; */
-    /* float: left; */
     width: 100vw;
-    /* height: 100vh; */
-    margin-left: calc( (100% - 100vw) / 2 );
+    margin-left: calc( (100% - 100vw) / 2 ); /*100% of screen is divided in two */
 }
+/* left side */
 .main {
-    background-color: red;
-    /* display: inline-block; */
+    width: 60vw;
+    height: 100vh;
     float: left;
-    width: calc( (120% - 2 * 0px) / 2 );
 }
-/* width: 100%;
-    height: auto;
-    object-fit: cover; */
+/* navigation menu */
+.menu {
+    padding-top: 20px;
+    margin: 0 auto; /* Align items in center  */
+    width: 90%;
+    height: 100px;
+}
+
+.logo {
+    padding-left: 10px;
+    margin: auto auto auto 0;
+    display: inline-block;
+    width: 3vw;
+    float: left;
+}
+
+.logo > img {
+    padding-top: 15px;
+    width: 30px;
+}
+
+.nav {
+    display: inline-block;
+    float: left;
+    text-align: right;
+    width: 20vw;
+    padding: 30px 10px 30px 0;
+}
+
+.nav > a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.nav > a:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.acc {
+    display: inline-block;
+    float: right;
+    text-align: right;
+    width: 20vw;
+    padding: 30px 10px 30px 0;
+}
+
+.acc > a {
+    margin: auto;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.acc > .btn {
+    color: white;
+    border-radius: 2px;
+    background-color: #333333;
+    padding: 12px 17px;
+}
+/* image in the right */
 .img {
     background: url(images/1.png);
-    /* background-color: salmon; */
-    /* background-color: black; */
-    /* display: inline-block; */
     float: right;
-    width: calc( (80% - 2 * 0px) / 2 );
+    width: 40vw; 
+    /* width: calc( (80% - 2 * 0px) / 2 ); */ /*you can use calc, or just width  */
     height: 100vh;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* hero(right side info content) */
+.hero {
+    padding-left: 9rem;
+}
+.hero > h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    padding-top: 3rem;
+    letter-spacing: 1px;
+    color: #333333;
+}
+.hero > p {
+    padding-top: 1rem;
+    font-size: 18px;
+    line-height: 27px;
+    color: #333333;
+}
+.hero > .far {
+    color: #333333;
+    font-size: 60px;
+    padding-top: 3rem;
+}
+.hero > .scroll {
+    text-transform: capitalize;
+    display: inline-block;
+}
