@@ -6,11 +6,65 @@ body {
     box-sizing: border-box; /*padding and border are included in the width and height*/
     font-family: 'Roboto', sans-serif;
 }
+
+    /* mobile version */
+
+    @media (max-width: 767px) {
+        .display-none-for-mobile {
+          display: none;
+        }
+        .wrapper > .main {
+            width: 100%;
+        }
+        .wrapper > .main > .menu > .logo {
+            width: 2%;
+        }
+        .wrapper > .main > .menu > .nav {
+            width: 50%;
+        }
+        .wrapper > .main > .menu > .acc {
+            width: 35%;
+        }
+        .wrapper > .main > .hero {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .wrapper > .main > .hero > h1 {
+            text-align: center;
+        }
+        .wrapper > .main > .hero > h1 > br {
+            display: none;
+        }
+        .wrapper > .main > .hero > p {
+            text-align: center;
+        }
+        .wrapper > .main > .hero > p > br {
+            display: none;
+        }
+        .wrapper > .main > .hero > .after::after {
+            top: 90%;
+            left: 35%;
+        }
+        .wrapper > .main > .hero > .after::before {
+            top: 60%;
+            left: 55%;
+        }
+        .wrapper > .main > .hero > .far {
+            padding-right: 5%;
+            padding-top: 20%;
+            padding-bottom: 10%;
+            float: right;
+            align-items: center;
+        }
+        .wrapper > .main > .hero > .scroll {
+            display: none;
+        }
+      }
+
 /* all wrapping and dividing page in sections */
 .wrapper {
-    width: 100vw;
-    margin-left: calc( (100% - 100vw) / 2 ); /*100% of screen is divided in two */
-}
+    width: 100vw;}
+
 /* left side */
 .main {
     width: 60vw;
@@ -98,13 +152,12 @@ body {
     background: url(images/1.png);
     float: right;
     width: 40vw; 
-    /* width: calc( (80% - 2 * 0px) / 2 ); */ /*you can use calc, or just width  */
     height: 100vh;
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* hero(right side info content) */
+/* hero(left side info content) */
 .hero {
     padding-left: 9rem;
 }
@@ -147,16 +200,6 @@ body {
     background-color: rgb(255, 53, 63);
     opacity: 0.5;
 }
-
-/* .hero > .after::before,
-.hero > .after::after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    content: "";
-    border-radius: 50px;
-    border: 1px solid black;
-} */
 
 .hero > .far {
     color: #333333;
