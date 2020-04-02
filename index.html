@@ -6,11 +6,15 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/0f37f361db.js" crossorigin="anonymous"></script></head>
+    <script src="https://kit.fontawesome.com/0f37f361db.js" crossorigin="anonymous"></script>
+</head>
 <body>
     <div class="wrapper">
         <div class="main">
-            <div class="menu">
+            <!-- MAVIGATION SCRIPT -->
+            <i class="fas fa-bars display-none-for-desktop" onclick="menu()"></i>
+
+            <div class="menu" id="dropdown">
                 <div class="logo">
                     <img src="images/logo.svg" alt="">
                 </div>
@@ -25,9 +29,8 @@
                     <a class="divider" href="#">login</a>
                     <a class="btn" href="#">get the app</a>
                 </div>
-
-
             </div>
+            
             <div class="hero">
                 <h1>Banking <br> has never been<br> so rewarding.</h1>
                 <p class="after">A mobile banking experience consisting <br> of an app, a credit card called Suncard.</p>
@@ -38,5 +41,16 @@
         <div class="img display-none-for-mobile">
         </div>
     </div>
+
+    <script>
+        function menu() {
+            var dropdown = document.getElementById('dropdown');
+            if (dropdown.style.display == 'none') {
+                dropdown.style.display = 'block';
+            } else {
+                dropdown.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
