@@ -12,3 +12,16 @@ Dar keli aspektai:
  - Sugalvok kokį minimalistinį efektą užvedus mauzą ant navigacijos rubrikų ir "Get the app" mygtuko
  - Tų dviejų apskritimų prie prierašo "a mobile banking experience consisting.." 
 nebūtina atlikti šiame etape, bet jeigu pavyks - įgyvendink tai pabaigoje (užuomina - CSS ::after selector).
+
+vh gali naudoti ir vh 
+vw naudoti procentus.
+navigacijai naudoti nav tag.
+headeris content footer
+
+visu pirma du blokai, navigacija ir kontentas. o e kaire desine
+fiksuotas atitraukimas nuo sonu, 25px
+
+pritaikyti layouta mobiliajai versijai, 767px.
+
+toogle navigation, use onclick.
+
