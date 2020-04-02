@@ -122,6 +122,7 @@ body {
     float: right;
     padding-right: 25px;
     padding-top: 25px;
+    cursor: pointer;
 } 
 /* navigation menu */
 .menu {
