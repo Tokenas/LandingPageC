@@ -12,9 +12,9 @@
     <div class="wrapper">
         <div class="main">
             <!-- MAVIGATION SCRIPT -->
-            <i class="fas fa-bars display-none-for-desktop" onclick="menu()"></i>
+            <i class="fas fa-bars display-none-for-desktop" onclick="toggleMenu()"></i>
 
-            <div class="menu" id="dropdown">
+            <div class="menu closed-menu" id="dropdown">
                 <div class="logo">
                     <img src="images/logo.svg" alt="">
                 </div>
@@ -43,14 +43,25 @@
     </div>
 
     <script>
-        function menu() {
+        function toggleMenu() {
             var dropdown = document.getElementById('dropdown');
-            if (dropdown.style.display == 'none') {
-                dropdown.style.display = 'block';
+            var dropdownHasClass = dropdown.classList.contains('closed-menu');
+            if (dropdownHasClass == true) {
+                // open navigation
+                dropdown.classList.remove('closed-menu');
             } else {
-                dropdown.style.display = 'none';
+                // close navigation
+                dropdown.classList.add('closed-menu');
             }
         }
-    </script>
+    //     function menu() {
+    //         var dropdown = document.getElementById('dropdown');
+    //         if (dropdown.style.display == 'none') {
+    //             dropdown.style.display = 'block';
+    //         } else {
+    //             dropdown.style.display = 'none';
+    //         }
+    //     }
+    // </script>
 </body>
 </html>

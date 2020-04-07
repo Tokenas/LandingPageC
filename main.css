@@ -25,7 +25,7 @@ body {
             width: 100%;
         }
         .wrapper > .main > .menu {
-            display: none;
+            /* display: none; */
             height: 100%;
         }
         .wrapper > .main > .menu > .logo > img {
@@ -264,4 +264,10 @@ body {
 .hero > .scroll {
     text-transform: capitalize;
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .closed-menu {
+       display: none !important; 
+    }
 }
